@@ -74,7 +74,6 @@ The parameters can be specified in signature, using the Nushell syntax for it. T
 
 If you want to provide examples, you can override the `examples` method.
 
-
 ## Limitations
 
 While Nushell plugin architecture allows to set multiple signatures (with different command name), at current implementation only one signature can be provided for a Python plugin. If you want to provide more commands, you need to split them into different Python modules
@@ -86,7 +85,3 @@ If you have custom types in Nushell, you can override the `decode_custom` and `e
 ## Debug your code
 
 If you need to debug your code, you can call `self.print`, which prints to `stderr`. (`stdout` is used to communicate between Python and Nushell.)
-
-## Pure Python code
-
-You can see a pure Python implementation (without this SDK) of a Nushell plugin in [nu_plugin_python_example.py](nu_plugin_python_example.py).

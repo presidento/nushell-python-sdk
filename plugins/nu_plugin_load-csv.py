@@ -13,7 +13,7 @@ class GeneratorPlugin(NuPlugin):
             "required_positional": [
                 {
                     "name": "filename",
-                    "desc": "Multiply input data by this amount",
+                    "desc": "File to load",
                     "shape": "Filepath",
                     "var_id": None,
                 },
